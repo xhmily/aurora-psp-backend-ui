@@ -1,0 +1,19 @@
+version: '3'
+services:
+  aurora-backend-ui:
+    build:
+      context: .
+    restart: always
+    container_name: aurora-backend-ui
+    image: aurora-backend-ui
+    networks:
+      - aurora_default
+    external_links:
+      - aurora-gateway
+    ports:
+      - 80:80
+
+# 加入到后端网络， 默认为 pigx_default  | docker network ls   查看
+networks:
+  aurora_default:
+    external: true
