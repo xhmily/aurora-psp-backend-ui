@@ -6,7 +6,7 @@ git clone git clone git@github.com:xhmily/aurora-psp-backend-ui.git
 ### 二、安装cnpm
 
 > aurora-psp-backend-ui目录下执行
-
+2
 ```shell
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
